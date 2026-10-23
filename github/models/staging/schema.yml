@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: dbt_financeiro
+    database: financeiro  # Nome do seu arquivo duckdb (sem a extensão .duckdb)
+    schema: main
+    tables:
+      - name: raw_clientes
+      - name: raw_faturas
+      - name: raw_pagamentos
